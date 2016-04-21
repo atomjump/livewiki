@@ -6,7 +6,7 @@ AtomJump Loop Server Plugin to create a live wiki using a wordcloud
 ## Installation notes:
 
 This plugin should be put on the client website (not in the AtomJump Loop server plugins directory), but it is best
-with a full install of AtomJump Loop Server.
+with a full install of AtomJump Loop Server https://github.com/atomjump/loop-server.
         
 npm install wordcloud
 bower install atomjump
