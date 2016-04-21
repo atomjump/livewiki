@@ -9,6 +9,7 @@ This plugin should be put on the client website (not in the AtomJump Loop server
 with a full install of AtomJump Loop Server https://github.com/atomjump/loop-server.
         
 `npm install wordcloud`
+
 `bower install atomjump`
 
 Copy ./configORIGINAL.php to config.php
