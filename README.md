@@ -1,3 +1,5 @@
+<img src="https://atomjump.com/images/logo80.png">
+
 # livewiki
 AtomJump Loop Server Plugin to create a live wiki using a wordcloud
 
