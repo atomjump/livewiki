@@ -7,7 +7,9 @@ AtomJump Loop Server Plugin to create a live wiki using a wordcloud
 ## Requirements
 
 AtomJump Loop Server >= 0.5.0
+
 Or
+
 AtomJump Loop >= 0.5.1 and AtomJump.com Server >= 0.5.0
 
 
