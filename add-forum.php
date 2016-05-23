@@ -24,6 +24,9 @@
                 //Modify the temperature
                 if($temperature == 0) {
                     unset($json['list'][$cnt]);     //remove entry in this case
+                    $the_list = $json['list']; 	    //reindex the array
+                    $the_list = array_values($the_list);
+                    $json['list'] = $the_list;
                 } else {
                 
                     $json['list'][$cnt][1] = $temperature;  //set new temp
