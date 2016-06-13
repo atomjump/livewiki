@@ -31,3 +31,8 @@ Now configure the options in config.php.
 
 You can add and remove any number of forums quickly at the bottom. Then start typing in each forum and communicating with your fellow
 team members.
+
+
+## Demo
+
+A demo is available at https://atomjump.com/demo/livewiki/
