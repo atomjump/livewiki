@@ -164,19 +164,8 @@
         oReq.setRequestHeader("Cache-Control", "no-cache");
         oReq.send();
 
-        function reqListener(e) {
-            
-           
-            var words = JSON.parse(this.responseText);
-            var cloudOpts = { 
-              list: words.list,
-              gridSize: Math.round(16 * $('#my_canvas').width() / 1024),
-              weightFactor: function (size) {
-                return Math.pow(size, 2.3) * $('#my_canvas').width() / 1024;
-              },
-              fontFamily: '<?php echo $font_family ?>',
-              color: function (word, weight) {
-                var col;
+	function getColor(word, weight) {
+		var col;
                 if (weight === 10) {
                     col = '#007dc5';
                 } else {
@@ -190,23 +179,49 @@
                     }
                 }
                 return col;
-              },
-              rotateRatio: 0,
-              backgroundColor: '<?php echo $background_color ?>',
-              classes: 'comment-open',
-              click: function(index, size) {
-                //Modify the local clickable feedback link, then click it
-                $('#my-comments').data('uniquefeedbackid', "<?php echo $unique_key ?>" + index[0]);
-                $('#my-comments').trigger("click");
-                return false;
-              },
-              hover: function(word) {
-              },
-              shuffle: false
-              
-            }
-                                
-            WordCloud(document.getElementById('my_canvas'), cloudOpts);
+	}
+
+        function reqListener(e) {
+            
+           
+            var words = JSON.parse(this.responseText);
+            
+            <?php if($_REQUEST['ver'] == "mobile") { 
+       		//A mobile version is built for the mobile screens - a list of the text down the screen, only.
+            ?>
+		    for(var cnt=0; cnt<words.length; cnt++) {
+		    	var word = words[cnt][0];
+		    	var weight = words[cnt][1];
+		    	var col = getColor(word, weight);
+		    	
+		    }            
+            	
+            <?php } else { //A standard web version ?>
+	            var cloudOpts = { 
+	              list: words.list,
+	              gridSize: Math.round(16 * $('#my_canvas').width() / 1024),
+	              weightFactor: function (size) {
+	                return Math.pow(size, 2.3) * $('#my_canvas').width() / 1024;
+	              },
+	              fontFamily: '<?php echo $font_family ?>',
+	              color: getColor,
+	              rotateRatio: 0,
+	              backgroundColor: '<?php echo $background_color ?>',
+	              classes: 'comment-open',
+	              click: function(index, size) {
+	                //Modify the local clickable feedback link, then click it
+	                $('#my-comments').data('uniquefeedbackid', "<?php echo $unique_key ?>" + index[0]);
+	                $('#my-comments').trigger("click");
+	                return false;
+	              },
+	              hover: function(word) {
+	              },
+	              shuffle: false
+	              
+	            }
+	                                
+	            WordCloud(document.getElementById('my_canvas'), cloudOpts);
+            <?php } ?>
             
         }
        
