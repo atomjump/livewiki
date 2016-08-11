@@ -199,6 +199,7 @@
        		//A mobile version is built for the mobile screens - a list of the text down the screen, only.
             ?>
             var all= "";
+            alert(words);
             
 		    for(var cnt=0; cnt<words.length; cnt++) {
 		    	var word = words[cnt][0];
