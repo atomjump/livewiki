@@ -181,7 +181,7 @@
                             </select>
                         </div>
                     </div> <!-- end of input group -->
-                    <button style="margin-top: 4px;" type="submit" class="btn btn-primary">Submit</button>
+                    <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
                   </div>  <!-- end of form group -->
 
                   
@@ -217,6 +217,7 @@
 			//Mobile version
 			$('#show-word-cloud').hide();
 			$('#forum').css('width', '300px;');
+			$('#submit-button').css('margin-top', '4px'); 
 			
 		} else {
 			$('#show-mobile-display').hide();
