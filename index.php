@@ -56,7 +56,9 @@
           margin:0 auto;
         }
         
-        
+        a {
+        	font-family: '<?php echo $font_family ?>';
+        }
         a:link {
         	text-decoration: none;
 		}
@@ -244,7 +246,7 @@
 		    	var col = getColor(word, weight);
 		    	
 		    	var fontSize = Math.pow(weight, 2.3) * $('#mobile-display').width() / 1024;
-		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' style='color: " + col + "; font-size:" + fontSize + "px'; font-family:'<?php echo $font_family ?>'; text-decoration: none;>" + word + "</a></br>";
+		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' style='color: " + col + "; font-size:" + fontSize + "px'; text-decoration: none;>" + word + "</a></br>";
 		    	
 		    }   
 		    alert(all);
