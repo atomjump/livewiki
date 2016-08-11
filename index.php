@@ -94,12 +94,12 @@
     <div id="comment-holder"></div><!-- holds the popup comments. Can be anywhere between the <body> tags -->
     <div class="container-fluid" >
         <div class="row" style="padding-top: 10px;">
-            <!--<div class="col-md-2"></div>-->
+            
             <div class="col-md-12">
                 <div class="centering text-center">
              
-                    <!--<canvas id="my_canvas" width="100%" height="768"></canvas> -->
-                 
+                    
+                   <div id="mobileDisplay"></div>
                    <span id="my-comments" class="comment-open" style="display: none;" href="javascript:">Click me for comments</span>
 		            <!-- Any link on the page can have the 'comment-open' class added and a blank 'href="javascript:"' -->
 		
@@ -110,7 +110,7 @@
                     </div>
                  </div>
             </div>
-            <!--<div class="col-md-2"></div>-->
+            
         </div> <!-- end of row -->
         
         <div class="row" style="padding-top: 10px;">
@@ -156,7 +156,7 @@
    
      <script>
        
-       var treeData;
+        var treeData;
 
         var oReq = new XMLHttpRequest();
         oReq.onload = reqListener;
@@ -164,22 +164,31 @@
         oReq.setRequestHeader("Cache-Control", "no-cache");
         oReq.send();
 
-	function getColor(word, weight) {
-		var col;
-                if (weight === 10) {
-                    col = '#007dc5';
-                } else {
-                    var char = Math.abs(parseInt((word.charCodeAt(0) - 97)/5)); // = 0-25 /5 = 0-5
-                    
-                    var colours = [ '#AAA', '#BBB', '#CCC', '#DDD', '#FFF' ];
-                    if(colours[char]) {
-                        col = colours[char];
-                    } else {
-                        col = '#FFF';
-                    }
-                }
-                return col;
-	}
+		function getColor(word, weight) {
+			var col;
+					if (weight === 10) {
+						col = '#007dc5';
+					} else {
+						var char = Math.abs(parseInt((word.charCodeAt(0) - 97)/5)); // = 0-25 /5 = 0-5
+					
+						var colours = [ '#AAA', '#BBB', '#CCC', '#DDD', '#FFF' ];
+						if(colours[char]) {
+							col = colours[char];
+						} else {
+							col = '#FFF';
+						}
+					}
+					return col;
+		}
+		
+		function clickEntry(index, size) {
+		  	//Modify the local clickable feedback link, then click it
+	        $('#my-comments').data('uniquefeedbackid', "<?php echo $unique_key ?>" + index[0]);
+	        $('#my-comments').trigger("click");
+	        return false;
+		
+		}
+		
 
         function reqListener(e) {
             
@@ -189,12 +198,19 @@
             <?php if($_REQUEST['ver'] == "mobile") { 
        		//A mobile version is built for the mobile screens - a list of the text down the screen, only.
             ?>
+            var all= "";
+            
 		    for(var cnt=0; cnt<words.length; cnt++) {
 		    	var word = words[cnt][0];
 		    	var weight = words[cnt][1];
 		    	var col = getColor(word, weight);
 		    	
-		    }            
+		    	var fontSize = Math.pow(weight, 2.3) * $('#my_canvas').width() / 1024;
+		    	all = all + "<a href='javascript' onclick='return clickEntry(" + cnt + ");'>" + word + "</a>";
+		    	
+		    }   
+		    
+		    $('#mobileDisplay').html(all);         
             	
             <?php } else { //A standard web version ?>
 	            var cloudOpts = { 
@@ -208,12 +224,7 @@
 	              rotateRatio: 0,
 	              backgroundColor: '<?php echo $background_color ?>',
 	              classes: 'comment-open',
-	              click: function(index, size) {
-	                //Modify the local clickable feedback link, then click it
-	                $('#my-comments').data('uniquefeedbackid', "<?php echo $unique_key ?>" + index[0]);
-	                $('#my-comments').trigger("click");
-	                return false;
-	              },
+	              click: clickEntry,
 	              hover: function(word) {
 	              },
 	              shuffle: false
