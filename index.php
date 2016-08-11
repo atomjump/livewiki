@@ -83,11 +83,11 @@
 	<!-- Must be after the others to stress the importance -->
 	<style>
 
-   	    a {
+   	   /* a {
 			font-family: <?php echo $font_family ?> !important;
-		}
+		}*/
 
-		a:hover, a:visited, a:link, a:active
+		.list a:hover, .list a:visited, .list a:link, .list a:active
 		{
 			font-family: <?php echo $font_family ?> !important;
 			text-decoration: none;
@@ -271,7 +271,7 @@
 		    	var col = getColor(word, weight);
 		    	
 		    	var fontSize = weight * 10;
-		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
+		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='list' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
 		    	
 		    }   
 		    
