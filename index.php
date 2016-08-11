@@ -30,6 +30,24 @@
     <script src="node_modules/wordcloud/src/wordcloud2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
    
+
+    <!-- AtomJump Feedback Starts -->
+   <!-- Bootstrap core CSS. Ver 3.3.1 sits in css/bootstrap.min.css -->
+	  <link rel="StyleSheet" href="<?php echo $bootstrap_css_path ?>/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- AtomJump Feedback CSS -->
+	<link rel="StyleSheet" href="<?php echo $atomjump_path ?>/css/comments-0.1.css?ver=1">
+
+
+
+
+	
+	<!-- Bootstrap HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
     <style>
     
         html, body {
@@ -56,10 +74,6 @@
           margin:0 auto;
         }
         
-        a {
-        	font-family: '<?php echo $font_family ?>';
-        	text-decoration: none;
-        }
         
         a:hover, a:visited, a:link, a:active
 		{
@@ -71,19 +85,7 @@
         
     
     </style>
-    <!-- AtomJump Feedback Starts -->
-   <!-- Bootstrap core CSS. Ver 3.3.1 sits in css/bootstrap.min.css -->
-	  <link rel="StyleSheet" href="<?php echo $bootstrap_css_path ?>/bootstrap.min.css" rel="stylesheet">
-	
-	<!-- AtomJump Feedback CSS -->
-	<link rel="StyleSheet" href="<?php echo $atomjump_path ?>/css/comments-0.1.css?ver=1">
-	
-	<!-- Bootstrap HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-	
+
 	
 	<script>
 		//Add your configuration here for AtomJump Feedback
@@ -240,7 +242,6 @@
 		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
 		    	
 		    }   
-		    alert(all);
 		    
 		    $('#mobile-display').html(all);         
             	
