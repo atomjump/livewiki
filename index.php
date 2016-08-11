@@ -99,7 +99,7 @@
                 <div class="centering text-center">
              
                     
-                   <div id="mobileDisplay"></div>
+                   <div id="mobile-display"></div>
                    <span id="my-comments" class="comment-open" style="display: none;" href="javascript:">Click me for comments</span>
 		            <!-- Any link on the page can have the 'comment-open' class added and a blank 'href="javascript:"' -->
 		
@@ -207,10 +207,10 @@
 		    	
 		    	var fontSize = Math.pow(weight, 2.3) * $('#my_canvas').width() / 1024;
 		    	all = all + "<a href='javascript' onclick='return clickEntry(" + cnt + ");'>" + word + "</a>";
-		    	
+		    	alert(all);
 		    }   
 		    
-		    $('#mobileDisplay').html(all);         
+		    $('#mobile-display').html(all);         
             	
             <?php } else { //A standard web version ?>
 	            var cloudOpts = { 
