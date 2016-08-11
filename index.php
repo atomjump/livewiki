@@ -197,7 +197,7 @@
         var words = {};
 			
 			
-		if(window.mobilecheck() == true) {
+		if(mobilecheck() == true) {
 			$('#my_canvas').hide();
 			
 		} else {
