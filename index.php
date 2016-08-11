@@ -74,7 +74,9 @@
           margin:0 auto;
         }
         
-        
+        a {
+        	font-family: '<?php echo $font_family ?>' !important;
+        }
         a:hover, a:visited, a:link, a:active
 		{
 			font-family: '<?php echo $font_family ?>' !important;
