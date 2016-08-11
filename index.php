@@ -60,6 +60,13 @@
         	font-family: '<?php echo $font_family ?>';
         	text-decoration: none;
         }
+        
+        a:hover, a:visited, a:link, a:active
+		{
+			font-family: '<?php echo $font_family ?>';
+			text-decoration: none;
+		}
+
   
         
     
