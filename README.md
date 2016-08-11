@@ -24,7 +24,9 @@ with a full install of AtomJump Loop Server https://github.com/atomjump/loop-ser
 
 Copy ./configORIGINAL.php to config.php
 
-Now configure the options in config.php.
+Now configure the options in config.php. You will likely also have to change the permissions on data/words.json.
+
+`chmod 777 data/words.json`
 
 
 ## Using the Live Wiki
