@@ -77,7 +77,7 @@
         
         a:hover, a:visited, a:link, a:active
 		{
-			font-family: '<?php echo $font_family ?>';
+			font-family: '<?php echo $font_family ?>' !important;
 			text-decoration: none;
 		}
 
