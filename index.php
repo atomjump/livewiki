@@ -198,11 +198,13 @@
 		}
 			
 		if(window.mobilecheck() == true) {
+			//Mobile version
 			$('#show-word-cloud').hide();
+			$('#forum').css('width', '80%');
 			
 		} else {
 			$('#show-mobile-display').hide();
-			$('#forum').css('width', '80%');
+			
 		}
 
 
