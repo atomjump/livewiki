@@ -93,6 +93,12 @@
 			text-decoration: none;
 		}
 		
+		.input-group-addon {
+ 		    width:80%;
+    		text-align:left;
+		}
+		
+		
 	 </style>
 
 
@@ -146,7 +152,7 @@
             
             <div class="col-md-12">
                 <div class="centering text-center">
-                    <div id="mobile-display" style="background-color: <?php echo $background_color ?>"></div>
+                    <div id="mobile-display" style="background-color: <?php echo $background_color ?>; padding-bottom: 10px;"></div>
                  </div>
             </div>
             
