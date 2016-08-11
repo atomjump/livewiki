@@ -207,7 +207,7 @@
 		    	var col = getColor(word, weight);
 		    	
 		    	var fontSize = Math.pow(weight, 2.3) * $('#my_canvas').width() / 1024;
-		    	all = all + "<a href='javascript' onclick='return clickEntry(" + cnt + ");' style='color: " + col + ";font-size:" + fontSize + "'>" + word + "</a></br>";
+		    	all = all + "<a href='javascript' onclick='return clickEntry(" + word + ", null);' style='color: " + col + ";font-size:" + fontSize + "'>" + word + "</a></br>";
 		    }   
 		    
 		    $('#mobile-display').html(all);         
