@@ -87,7 +87,7 @@
 			font-family: <?php echo $font_family ?> !important;
 		}*/
 
-		.list a:hover, .list a:visited, .list a:link, .list a:active
+		a.list:hover, a.list:visited, a.list:link, a.list:active
 		{
 			font-family: <?php echo $font_family ?> !important;
 			text-decoration: none;
