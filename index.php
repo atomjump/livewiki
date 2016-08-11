@@ -134,6 +134,19 @@
             </div>
             
         </div> <!-- end of row -->
+ 
+ 
+        <div id="show-mobile-display" class="row" style="padding-top: 10px;">
+            
+            <div class="col-md-12">
+                <div class="centering text-center">
+                    <div id="mobile-display" style="background-color: <?php echo $background_color ?>"></div>
+                 </div>
+            </div>
+            
+        </div> <!-- end of row -->
+        
+ 
         
         <div class="row" style="padding-top: 10px;">
           <div class="col-md-2"></div>
@@ -168,16 +181,7 @@
           
         </div> <!-- end of row -->
         
-        <div id="show-mobile-display" class="row" style="padding-top: 10px;">
-            
-            <div class="col-md-12">
-                <div class="centering text-center">
-                    <div id="mobile-display" style="background-color: <?php echo $background_color ?>"></div>
-                 </div>
-            </div>
-            
-        </div> <!-- end of row -->
-        
+ 
         
     </div>
 
@@ -200,7 +204,7 @@
 		if(window.mobilecheck() == true) {
 			//Mobile version
 			$('#show-word-cloud').hide();
-			$('#forum').css('width', '80%');
+			$('#forum').css('width', '300px;');
 			
 		} else {
 			$('#show-mobile-display').hide();
