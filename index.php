@@ -99,7 +99,7 @@
                 <div class="centering text-center">
              
                     
-                   <div id="mobile-display" style="backgroundColor: <?php echo $background_color ?>"></div>
+                   <div id="mobile-display" style="background-color: <?php echo $background_color ?>"></div>
                    <span id="my-comments" class="comment-open" style="display: none;" href="javascript:">Click me for comments</span>
 		            <!-- Any link on the page can have the 'comment-open' class added and a blank 'href="javascript:"' -->
 		
