@@ -55,14 +55,18 @@
           float:none;
           margin:0 auto;
         }
+        
+        a {
+        	text-decoration: none;
+        }
     
     </style>
     <!-- AtomJump Feedback Starts -->
    <!-- Bootstrap core CSS. Ver 3.3.1 sits in css/bootstrap.min.css -->
-	  <link rel="StyleSheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="StyleSheet" href="<?php echo $bootstrap_css_path ?>/bootstrap.min.css" rel="stylesheet">
 	
 	<!-- AtomJump Feedback CSS -->
-	<link rel="StyleSheet" href="bower_components/atomjump/css/comments-0.1.css?ver=1">
+	<link rel="StyleSheet" href="<?php echo $atomjump_path ?>/css/comments-0.1.css?ver=1">
 	
 	<!-- Bootstrap HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -86,7 +90,7 @@
 			"server":  "<?php echo $server ?>"
 		}
 	</script>
-	<script type="text/javascript" src="bower_components/atomjump/js/chat.js"></script>
+	<script type="text/javascript" src="<?php echo $atomjump_path ?>/js/chat.js"></script>
 	<!-- AtomJump Feedback Ends -->
    
 </head>
@@ -99,19 +103,22 @@
                 <div class="centering text-center">
              
                    
-                   <?php if($_REQUEST['ver'] == "mobile") { ?>
-                   		<div id="mobile-display" style="background-color: <?php echo $background_color ?>"></div>
-                   <?php } ?>
+                   
                    
                    <span id="my-comments" class="comment-open" style="display: none;" href="javascript:">Click me for comments</span>
 		            <!-- Any link on the page can have the 'comment-open' class added and a blank 'href="javascript:"' -->
 		
 		            
-                    <?php if($_REQUEST['ver'] != "mobile") { ?>
-						<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto">
-							<div id="my_canvas" style="width:100%; height: 768px; "></div>
-						</div>
-                    <?php } ?>
+                   
+					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto">
+						<div id="my_canvas" style="width:100%; height: 768px; "></div>
+					</div>
+                   
+                    
+                    
+                   	<div id="mobile-display" style="background-color: <?php echo $background_color ?>"></div>
+                   
+                    
                  </div>
             </div>
             
@@ -200,9 +207,7 @@
            
             words = JSON.parse(this.responseText);
             
-            <?php if($_REQUEST['ver'] == "mobile") { 
-       		//A mobile version is built for the mobile screens - a list of the text down the screen, only.
-            ?>
+            //A mobile version is built for the mobile screens - a list of the text down the screen, only.
             var all= "";
             var list = words.list;
             
@@ -218,7 +223,8 @@
 		    
 		    $('#mobile-display').html(all);         
             	
-            <?php } else { //A standard web version ?>
+            
+            //Desktop version included on the same screen
 	            var cloudOpts = { 
 	              list: words.list,
 	              gridSize: Math.round(16 * $('#my_canvas').width() / 1024),
@@ -238,7 +244,7 @@
 	            }
 	                                
 	            WordCloud(document.getElementById('my_canvas'), cloudOpts);
-            <?php } ?>
+         
             
         }
        
