@@ -229,8 +229,8 @@
 		    	var weight = list[cnt][1];
 		    	var col = getColor(word, weight);
 		    	
-		    	var fontSize = Math.pow(weight, 2.4) * $('#mobile-display').width() / 1024;
-		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' style='color: " + col + "; font-size:" + fontSize + "px'; text-decoration: none;>" + word + "</a></br>";
+		    	var fontSize = weight * 10;
+		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
 		    	
 		    }   
 		    alert(all);
