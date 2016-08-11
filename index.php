@@ -48,6 +48,8 @@
 	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	
+	
+	
     <style>
     
         html, body {
@@ -75,11 +77,11 @@
         }
         
         a {
-        	font-family: '<?php echo $font_family ?>' !important;
+        	font-family: <?php echo $font_family ?> !important;
         }
         a:hover, a:visited, a:link, a:active
 		{
-			font-family: '<?php echo $font_family ?>' !important;
+			font-family: <?php echo $font_family ?> !important;
 			text-decoration: none;
 		}
 
