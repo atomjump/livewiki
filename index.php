@@ -94,7 +94,7 @@
 		}
 		
 		.input-group-addon {
- 		    width:80%;
+ 		    width:30%;
     		text-align:left;
 		}
 		
