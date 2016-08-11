@@ -98,16 +98,20 @@
             <div class="col-md-12">
                 <div class="centering text-center">
              
-                    
-                   <div id="mobile-display" style="background-color: <?php echo $background_color ?>"></div>
+                   
+                   <?php if($_REQUEST['ver'] == "mobile") { ?>
+                   		<div id="mobile-display" style="background-color: <?php echo $background_color ?>"></div>
+                   <?php } ?>
+                   
                    <span id="my-comments" class="comment-open" style="display: none;" href="javascript:">Click me for comments</span>
 		            <!-- Any link on the page can have the 'comment-open' class added and a blank 'href="javascript:"' -->
 		
 		            
-                 
-                    <div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto">
-                        <div id="my_canvas" style="width:100%; height: 768px; "></div>
-                    </div>
+                    <?php if($_REQUEST['ver'] != "mobile") { ?>
+						<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto">
+							<div id="my_canvas" style="width:100%; height: 768px; "></div>
+						</div>
+                    <?php } ?>
                  </div>
             </div>
             
@@ -207,7 +211,7 @@
 		    	var col = getColor(word, weight);
 		    	
 		    	var fontSize = Math.pow(weight, 2.3) * $('#my_canvas').width() / 1024;
-		    	all = all + "<a href='javascript:' onclick='return clickEntry(" + word + ", null);' style='color: " + col + ";font-size:" + fontSize + "'>" + word + "</a></br>";
+		    	all = all + "<a href='javascript:' onclick='return clickEntry(" + word + ", null);' style='color: " + col + "; font-size:" + fontSize + "'>" + word + "</a></br>";
 		    }   
 		    
 		    $('#mobile-display').html(all);         
