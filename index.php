@@ -200,10 +200,11 @@
             ?>
             var all= "";
             alert(JSON.stringify(words));
+            var list = words.list;
             
-		    for(var cnt=0; cnt<words.length; cnt++) {
-		    	var word = words[cnt][0];
-		    	var weight = words[cnt][1];
+		    for(var cnt=0; cnt<list.length; cnt++) {
+		    	var word = list[cnt][0];
+		    	var weight = list[cnt][1];
 		    	var col = getColor(word, weight);
 		    	
 		    	var fontSize = Math.pow(weight, 2.3) * $('#my_canvas').width() / 1024;
