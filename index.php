@@ -161,6 +161,7 @@
      <script>
        
         var treeData;
+        var words = {};
 
         var oReq = new XMLHttpRequest();
         oReq.onload = reqListener;
@@ -197,7 +198,7 @@
         function reqListener(e) {
             
            
-            var words = JSON.parse(this.responseText);
+            words = JSON.parse(this.responseText);
             
             <?php if($_REQUEST['ver'] == "mobile") { 
        		//A mobile version is built for the mobile screens - a list of the text down the screen, only.
