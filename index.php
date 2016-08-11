@@ -30,7 +30,7 @@
     <script src="node_modules/wordcloud/src/wordcloud2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
    
-
+	<!-- Must be before the other css files for global reach -->
     <style>
     
         html, body {
@@ -57,14 +57,7 @@
           margin:0 auto;
         }
         
-        a {
-        	font-family: <?php echo $font_family ?> !important;
-        }
-        a:hover, a:visited, a:link, a:active
-		{
-			font-family: <?php echo $font_family ?> !important;
-			text-decoration: none;
-		}
+ 
    
     </style>
 
@@ -87,7 +80,20 @@
 	<![endif]-->
 	
 	
-	
+	<!-- Must be after the others to stress the importance -->
+	<style>
+
+   	    a {
+			font-family: <?php echo $font_family ?> !important;
+		}
+
+		a:hover, a:visited, a:link, a:active
+		{
+			font-family: <?php echo $font_family ?> !important;
+			text-decoration: none;
+		}
+		
+	 </style>
 
 
 	
