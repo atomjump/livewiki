@@ -56,9 +56,26 @@
           margin:0 auto;
         }
         
-        a {
+        
+        a:link {
         	text-decoration: none;
-        }
+		}
+
+		/* visited link */
+		a:visited {
+        	text-decoration: none;
+		}
+
+		/* mouse over link */
+		a:hover {
+        	text-decoration: none;
+		}
+
+		/* selected link */
+		a:active {
+        	text-decoration: none;
+		}
+        
     
     </style>
     <!-- AtomJump Feedback Starts -->
@@ -116,7 +133,6 @@
                    
                     
                     
-                   	<div id="mobile-display" style="background-color: <?php echo $background_color ?>"></div>
                    
                     
                  </div>
@@ -158,6 +174,17 @@
             
           
         </div> <!-- end of row -->
+        
+        <div class="row" style="padding-top: 10px;">
+            
+            <div class="col-md-12">
+                <div class="centering text-center">
+                    <div id="mobile-display" style="background-color: <?php echo $background_color ?>"></div>
+                 </div>
+            </div>
+            
+        </div> <!-- end of row -->
+        
         
     </div>
 
@@ -217,7 +244,7 @@
 		    	var col = getColor(word, weight);
 		    	
 		    	var fontSize = Math.pow(weight, 2.3) * $('#mobile-display').width() / 1024;
-		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' style='color: " + col + "; font-size:" + fontSize + "px'; text-decoration: none;>" + word + "</a></br>";
+		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' style='color: " + col + "; font-size:" + fontSize + "px'; font-family:'<?php echo $font_family ?>'; text-decoration: none;>" + word + "</a></br>";
 		    	
 		    }   
 		    
