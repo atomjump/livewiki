@@ -210,7 +210,7 @@
 		    	var weight = list[cnt][1];
 		    	var col = getColor(word, weight);
 		    	
-		    	var fontSize = Math.pow(weight, 2.3) * $('#my_canvas').width() / 1024;
+		    	var fontSize = Math.pow(weight, 2.3) * $('#mobile-display').width() / 1024;
 		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' style='color: " + col + "; font-size:" + fontSize + "px'>" + word + "</a></br>";
 		    	
 		    }   
