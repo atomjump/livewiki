@@ -113,7 +113,7 @@
 <body>
     <div id="comment-holder"></div><!-- holds the popup comments. Can be anywhere between the <body> tags -->
     <div class="container-fluid" >
-        <div class="row" style="padding-top: 10px;">
+        <div id="show-word-cloud" class="row" style="padding-top: 10px;">
             
             <div class="col-md-12">
                 <div class="centering text-center">
@@ -174,7 +174,7 @@
           
         </div> <!-- end of row -->
         
-        <div class="row" style="padding-top: 10px;">
+        <div id="show-mobile-display" class="row" style="padding-top: 10px;">
             
             <div class="col-md-12">
                 <div class="centering text-center">
@@ -204,10 +204,10 @@
 		}
 			
 		if(window.mobilecheck() == true) {
-			$('#my_canvas').hide();
+			$('#show-word-cloud').hide();
 			
 		} else {
-			$('#mobile-display').hide();
+			$('#show-mobile-display').hide();
 		}
 
 
