@@ -212,7 +212,9 @@
 		    	
 		    	var fontSize = Math.pow(weight, 2.3) * $('#my_canvas').width() / 1024;
 		    	all = all + "<a href='javascript:' onclick='return clickEntry(" + list[cnt] + ", null);' style='color: " + col + "; font-size:" + fontSize + "px'>" + word + "</a></br>";
+		    	
 		    }   
+		    alert(all);
 		    
 		    $('#mobile-display').html(all);         
             	
