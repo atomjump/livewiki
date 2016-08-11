@@ -152,7 +152,7 @@
             
             <div class="col-md-12">
                 <div class="centering text-center">
-                    <div id="mobile-display" style="background-color: <?php echo $background_color ?>; padding-bottom: 10px;"></div>
+                    <div id="mobile-display" style="background-color: <?php echo $background_color ?>; padding: 10px;"></div>
                  </div>
             </div>
             
