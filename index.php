@@ -247,6 +247,7 @@
 		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' style='color: " + col + "; font-size:" + fontSize + "px'; font-family:'<?php echo $font_family ?>'; text-decoration: none;>" + word + "</a></br>";
 		    	
 		    }   
+		    alert(all);
 		    
 		    $('#mobile-display').html(all);         
             	
