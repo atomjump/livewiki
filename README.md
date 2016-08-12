@@ -6,27 +6,34 @@ AtomJump Loop Server Plugin to create a live wiki using a wordcloud
 
 ## Requirements
 
-AtomJump Loop Server >= 0.5.0
+* AtomJump Loop Server >= 0.5.0
 
 Or
 
-AtomJump Loop >= 0.5.1 and AtomJump.com Server >= 0.5.0
+* AtomJump Loop >= 0.5.1 and AtomJump.com API (Use: https://atomjump.com/api/)
+
+* PHP >= 5.3
+* npm
+* bower
 
 
 ## Installation notes:
 
-This plugin should be put on the client website (not in the AtomJump Loop server plugins directory), but it is best
-with a full install of AtomJump Loop Server https://github.com/atomjump/loop-server.
+This plugin should be put on the client website (not in the AtomJump Loop server plugins directory), and it is best as a front-end to a full install of AtomJump Loop Server https://github.com/atomjump/loop-server. 
+
+After installing the loop-server, from your livewiki home directory:
+
+1. `git clone `
         
-`npm install wordcloud`
+2. `npm install wordcloud`
 
-`bower install atomjump`
+3. `bower install atomjump`
 
-Copy ./configORIGINAL.php to config.php
+4. Copy ./configORIGINAL.php to config.php
 
 Now configure the options in config.php. You will likely also have to change the permissions on data/words.json.
 
-`chmod 777 data/words.json`
+5. `chmod 777 data/words.json`
 
 
 ## Using the Live Wiki
