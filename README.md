@@ -1,14 +1,16 @@
 <img src="https://atomjump.com/images/logo80.png">
 
 # livewiki
-AtomJump Loop Server Plugin to create a live wiki using a wordcloud
+AtomJump Loop Server Plugin to create a live wiki using a wordcloud.
 
 
 ## Requirements
 
 For your Loop Server:
 * AtomJump Loop Server >= 0.5.0
+
 Or
+
 * AtomJump Loop >= 0.5.1 and AtomJump.com API (Use: https://atomjump.com/api/)
 
 For your livewiki:
