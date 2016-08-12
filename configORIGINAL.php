@@ -13,8 +13,9 @@
     $background_color = "#5ca7d2";                                  //Background colour
     $font_family = "Times, serif";
       
-    $bootstrap_css_path = "bower_components/bootstrap/dist/css";  	//No trailing slash
-    $atomjump_path = "bower_components/atomjump"; 					//No trailing slash
+    $bootstrap_css_path = "bower_components/bootstrap/dist/css";  	//No trailing slash. Put relative/absolute URL to your bootstrap css directory
+    $atomjump_path = "bower_components/atomjump"; 					//No trailing slash. Put relative/absolute URL to your
+                                                                    //AtomJump Loop install
                                                                     
 ?>
 
