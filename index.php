@@ -217,7 +217,6 @@
 			//Mobile version
 			$('#show-word-cloud').hide();
 			$('#forum').css('width', '300px;');
-			//$('#submit-button').css('margin-top', '4px'); 
 			
 		} else {
 			$('#show-mobile-display').hide();
@@ -299,11 +298,7 @@
 	            }
 	                                
 	            WordCloud(document.getElementById('my_canvas'), cloudOpts);
-         
-         
-         	 
-         
-            
+           
         }
        
 
