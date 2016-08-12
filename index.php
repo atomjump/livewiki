@@ -167,7 +167,7 @@
                 <form action="add-forum.php" class="form-inline" style="vertical-align: middle" >
                   <div class="form-group" >
                     <label class="sr-only" for="forum">Add</label>
-                    <div class="input-group">
+                    <div class="input-group" style="margin: 4px;">
                         
                         <input name="new-forum" type="text" class="form-control" id="forum" placeholder="New Forum">
                         <div class="input-group-addon">
@@ -217,7 +217,7 @@
 			//Mobile version
 			$('#show-word-cloud').hide();
 			$('#forum').css('width', '300px;');
-			$('#submit-button').css('margin-top', '4px'); 
+			//$('#submit-button').css('margin-top', '4px'); 
 			
 		} else {
 			$('#show-mobile-display').hide();
