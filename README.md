@@ -21,9 +21,9 @@ Or
 
 This plugin should be put on the client website (not in the AtomJump Loop server plugins directory), and it is best as a front-end to a full install of AtomJump Loop Server https://github.com/atomjump/loop-server. 
 
-After installing the loop-server, from your livewiki home directory:
+After installing the loop-server, from your intended livewiki home directory:
 
-1. `git clone https://github.com/atomjump/livewiki.git`
+1. `git clone https://github.com/atomjump/livewiki.git .`
         
 2. `npm install wordcloud`
 
