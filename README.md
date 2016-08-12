@@ -31,9 +31,9 @@ After installing the loop-server, from your intended livewiki home directory:
 
 3. `bower install atomjump`
 
-4. Copy ./configORIGINAL.php to config.php
+4. `cp configORIGINAL.php config.php`
 
-Now configure the options in config.php. You will likely also have to change the permissions on data/words.json.
+Now edit the options in config.php. 
 
 5. `chmod 777 data/words.json`
 
