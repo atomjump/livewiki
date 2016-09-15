@@ -67,7 +67,7 @@
 	  <link rel="StyleSheet" href="<?php echo $bootstrap_css_path ?>/bootstrap.min.css" rel="stylesheet">
 	
 	<!-- AtomJump Feedback CSS -->
-	<link rel="StyleSheet" href="<?php echo $atomjump_path ?>bower_components/atomjump/css/comments.css">
+	<link rel="StyleSheet" href="<?php echo $atomjump_path ?>css/comments.css">
 
 
 
@@ -118,7 +118,7 @@
 			"server":  "<?php echo $server ?>"
 		}
 	</script>
-	<script type="text/javascript" src="<?php echo $atomjump_path ?>bower_components/atomjump/js/chat.js"></script>
+	<script type="text/javascript" src="<?php echo $atomjump_path ?>js/chat.js"></script>
 	<!-- AtomJump Feedback Ends -->
    
 </head>
