@@ -169,7 +169,7 @@
             <div class="col-md-12">
                 <div class="centering text-center">
                 	
-                    <div id="mobile-display" style="position: absolute; top: 10px;"></div>
+                    <div id="mobile-display"></div>
                  </div>
             </div>
             
