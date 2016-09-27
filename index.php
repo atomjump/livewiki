@@ -64,6 +64,10 @@
           margin:0 auto;
         }
         
+        #my_canvas {
+            background-image: url("images/000000-0.8.png");
+        }
+        
 
         
  
@@ -143,7 +147,7 @@
 		            <!-- Any link on the page can have the 'comment-open' class added and a blank 'href="javascript:"' -->
 	            
  					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto; ">
-						<div id="my_canvas" style="width:100%; height: 768px; position: relative; background: url(images/000000-0.8.png); background-repeat: repeat;"></div>	
+						<div id="my_canvas" style="width:100%; height: 768px; position: relative; "></div>	
 					</div>
  										
                   
