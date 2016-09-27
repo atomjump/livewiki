@@ -143,7 +143,7 @@
 	            
  					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto; background-color:#AAA; opacity: 0.5;">
 					</div>
- 					<div id="my_canvas" style="width:100%; height: 768px; position: relative; top: 0px;"></div>						
+ 					<div id="my_canvas" style="width:100%; height: 768px; position: relative; top: -768px;"></div>						
                   
                     
                     
