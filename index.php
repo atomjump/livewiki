@@ -250,7 +250,7 @@
 						if(colours[char]) {
 							col = colours[char];
 						} else {
-							col = '#FFF';
+							col = '#333';
 						}
 					}
 					return col;
