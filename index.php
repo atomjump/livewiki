@@ -36,7 +36,13 @@
         html, body {
             height:100%;
             margin:0;
-            padding:0
+            padding:0;
+            
+        }
+        
+        body {
+        	background-image: url("images/backdrop1280.jpg");
+        
         }
  
         .container-fluid {
