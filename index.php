@@ -241,7 +241,7 @@
 		function getColor(word, weight, cnt) {
 			var col;
 					if ((cnt === 0)||(word == words.list[0][0])) {		//very first central entry
-						col = '#007dc5';
+						col = 'rgb(41,96,99);';
 					} else {
 						var char = Math.abs(parseInt((word.charCodeAt(0) - 97)/5)); // = 0-25 /5 = 0-5
 					
