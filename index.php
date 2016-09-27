@@ -68,6 +68,9 @@
             background-image: url("images/000000-0.8.png");
         }
         
+        #mobile-display {
+        	background-image: url("images/000000-0.8.png");
+        }
 
         
  
@@ -165,7 +168,7 @@
             
             <div class="col-md-12">
                 <div class="centering text-center">
-                	<div id="mobile-display-back" style="position: relative; top: 0px; height: 1000px; background-color:#FFF; padding: 10px; opacity: 0.8;"></div>
+                	
                     <div id="mobile-display" style="position: absolute; top: 10px;"></div>
                  </div>
             </div>
