@@ -65,11 +65,11 @@
         }
         
         #my_canvas {
-            background-image: url("images/000000-0.8.png");
+            background-image: url("images/dim.png");
         }
         
         #mobile-display {
-        	background-image: url("images/000000-0.8.png");
+        	background-image: url("images/dim.png");
         }
 
         
