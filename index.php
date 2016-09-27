@@ -141,7 +141,7 @@
                    <span id="my-comments" class="comment-open" style="display: none;" href="javascript:">Click me for comments</span>
 		            <!-- Any link on the page can have the 'comment-open' class added and a blank 'href="javascript:"' -->
 	            
- 					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto; background-color:#000; opacity: 0.5;">
+ 					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto; background-color:#aaa; opacity: 0.3;">
 					</div>
  					<div id="my_canvas" style="width:100%; height: 768px; position: relative; top: -768px;"></div>						
                   
