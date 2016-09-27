@@ -116,7 +116,7 @@
 		//Add your configuration here for AtomJump Feedback
 		var ajFeedback = {
 			"uniqueFeedbackId" : "<?php echo $unique_key ?>home",		//This can be anything globally unique to your company/page	
-			"myMachineUser" : "1.1.1.1:2",			/* Obtain this value from 1. Settings
+			"myMachineUser" : "1.1.1.1:3",			/* Obtain this value from 1. Settings
 																			2. Entering an email/Password
 																			3. Click save
 																			4. Settings
@@ -142,7 +142,7 @@
                    <span id="my-comments" class="comment-open" style="display: none;" href="javascript:">Click me for comments</span>
 		            <!-- Any link on the page can have the 'comment-open' class added and a blank 'href="javascript:"' -->
 	            
- 					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto; background-color:#FFF; opacity: 0.8; -webkit-filter: blur(3px);">
+ 					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto; background-color:#FFF; opacity: 0.8;">
 					</div>
  					<div id="my_canvas" style="width:100%; height: 768px; position: relative; top: -768px;"></div>						
                   
@@ -160,7 +160,7 @@
             
             <div class="col-md-12">
                 <div class="centering text-center">
-                    <div id="mobile-display" style="background-color: <?php echo $background_color ?>; padding: 10px;"></div>
+                    <div id="mobile-display" style="background-color: <?php echo $background_color ?>; padding: 10px; opacity: 0.8;"></div>
                  </div>
             </div>
             
