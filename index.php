@@ -230,9 +230,9 @@
         oReq.setRequestHeader("Cache-Control", "no-cache");
         oReq.send();
 
-		function getColor(word, weight) {
+		function getColor(word, weight, cnt) {
 			var col;
-					if (weight === 10) {
+					if (cnt === 0) {		//very first central entry
 						col = '#007dc5';
 					} else {
 						var char = Math.abs(parseInt((word.charCodeAt(0) - 97)/5)); // = 0-25 /5 = 0-5
@@ -268,7 +268,7 @@
 		    for(var cnt=0; cnt<list.length; cnt++) {
 		    	var word = list[cnt][0];
 		    	var weight = list[cnt][1];
-		    	var col = getColor(word, weight);
+		    	var col = getColor(word, weight, cnt);
 		    	
 		    	var fontSize = weight * 10;
 		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='list' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
