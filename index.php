@@ -142,7 +142,7 @@
 		            <!-- Any link on the page can have the 'comment-open' class added and a blank 'href="javascript:"' -->
 	            
                    
-					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto; background-color:#AAA;">
+					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto; background-color:#AAA; opacity: 0.5;">
 						<div id="my_canvas" style="width:100%; height: 768px; "></div>
 					</div>
                    
