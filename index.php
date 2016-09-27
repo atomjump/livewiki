@@ -160,7 +160,7 @@
             
             <div class="col-md-12">
                 <div class="centering text-center">
-                    <div id="mobile-display" style="background-color: <?php echo $background_color ?>; padding: 10px; opacity: 0.8;"></div>
+                    <div id="mobile-display" style="background-color:#FFF; padding: 10px; opacity: 0.8;"></div>
                  </div>
             </div>
             
