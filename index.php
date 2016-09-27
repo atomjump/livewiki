@@ -246,7 +246,7 @@
 					} else {
 						var char = Math.abs(parseInt((word.charCodeAt(0) - 97)/5)); // = 0-25 /5 = 0-5
 					
-						var colours = [ '#AAA', '#BBB', '#CCC', '#DDD', '#FFF' ];
+						var colours = [ '#333', '#444', '#555', '#666', '#777' ];
 						if(colours[char]) {
 							col = colours[char];
 						} else {
