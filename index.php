@@ -42,7 +42,7 @@
         
         body {
         	background-image: url("images/backdrop1280.jpg");
-        
+        	background-size: cover;
         }
  
         .container-fluid {
@@ -62,6 +62,8 @@
           float:none;
           margin:0 auto;
         }
+        
+
         
  
    
