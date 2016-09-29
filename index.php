@@ -211,6 +211,43 @@
         </div> <!-- end of row -->
         
  
+  		<div class="row" style="padding-top: 10px;">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <p>
+            	Jerry loved sport more than anything in the world, but because he wasn't very big or strong or fast, he was never picked to be on any teams. Finally, at the end of yet another unsuccessful football tryout, Jerry found himself all alone, crying forlornly and feeling useless. "I'm a good for nothing loser," he cried. "I hate sport - I hate it, and I quit!"            
+            </p>
+          
+          	<p>
+          	     Late that night in his bedroom while Jerry slept, his tear-stained football began to glow with a strange pulsating light, and a magical transformation began to take place. Jerry awoke to see his football change into a creature made entirely of small gray balls, with the biggest, friendliest smile he had ever seen - "Hi there, Jerry," it said, "I'm All-Round."
+          	</p>
+          	
+          	<p>
+          		All-Round said to Jerry, "You see, Jerry, when it comes to sport I'm the ultimate all-rounder - there's simply no end to what I can become because I believe in myself. But you can be an all-rounder, too - Just dig deep down in your heart for that belief, and remember it's the doing that counts, you don't need to win to be a winner!"
+          	</p>
+          	
+          	<p>
+          		All-Round told Jerry that sport was meant to be fun and challenging but should never make you doubt yourself, and how important it was to keep believing in yourself. Then he said, "Watch this," and before Jerry's eyes, all the balls that made up All-Round's arms and legs magically changed into fuzzy green tennis balls, and then into hard white baseballs.
+          	</p>
+          	
+          	<p>
+          		After Jerry went to sleep, All-Round realised there had to be lots of other boys and girls needing a special helping hand with their sport, so he'd need a complete team of All-Rounds, each looking after a different sport. He pulled one ball after another from his arm, which were magically replaced, and turned each one into a brand new All-Round.
+          	</p>
+          	
+          	<p>
+          	    "Now," said All-Round, " I wonder where we can stay - it should be secret, but handy so we can keep an eye on things." He noticed Jerry's computer and exclaimed, " I've got it - c'mon team, lets  go into cyberspace," and in a flash they were exploring deep inside the computer, where they eventually made their home in a space called 'Planet Spharia".
+          	</p>
+         
+         	<p>
+         		But while they were on their amazing micro-journey through the computer two of the All-Rounds ran into a nasty computer virus which transformed them into the troublemakers 'Ruff' and 'Tuff'. Two villains who would sneak around creating mischief to try and spoil All-Round and his team's best efforts to help sports kids everywhere.         	
+         	</p> 	
+          
+           </div> <!-- end of col -->
+           <div class="col-md-2"></div>            
+          
+        </div> <!-- end of row -->
+ 
+ 
         
     </div>
 
