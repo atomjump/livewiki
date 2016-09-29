@@ -119,6 +119,10 @@
     		text-align:left;
 		}
 		
+		li {
+			padding: 10px;
+		}
+		
 		
 	 </style>
 
