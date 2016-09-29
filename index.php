@@ -75,7 +75,7 @@
 
 		#story {
             background-image: url("images/dim.png");
-            padding: 10px;
+            padding: 20px;
         }
         
  
