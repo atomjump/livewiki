@@ -255,7 +255,11 @@
 					<li>
 						But while they were on their amazing micro-journey through the computer two of the All-Rounds ran into a nasty computer virus which transformed them into the troublemakers 'Ruff' and 'Tuff'. Two villains who would sneak around creating mischief to try and spoil All-Round and his team's best efforts to help sports kids everywhere.         	
 					</li>
-				</ul> 	
+					
+					
+				</ul>
+				
+				<h3>Do you feel like Jerry? Do you want help from All-Round? Put your question to All-Round on any of the live forums above, and we'll try to answer your questions! Anything you want to ask, you're most welcome. Please get your parents to agree to this first though.</h3>   	
 			</div>		  
            </div> <!-- end of col -->
            <div class="col-md-2"></div>            
