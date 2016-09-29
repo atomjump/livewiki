@@ -132,7 +132,7 @@
 		//Add your configuration here for AtomJump Feedback
 		var ajFeedback = {
 			"uniqueFeedbackId" : "<?php echo $unique_key ?>home",		//This can be anything globally unique to your company/page	
-			"myMachineUser" : "1.1.1.1:3",			/* Obtain this value from 1. Settings
+			"myMachineUser" : "1.1.1.1:8",			/* Obtain this value from 1. Settings
 																			2. Entering an email/Password
 																			3. Click save
 																			4. Settings
