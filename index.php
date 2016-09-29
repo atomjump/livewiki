@@ -259,7 +259,7 @@
 					
 				</ul>
 				
-				<h3>Do you feel like Jerry? Do you want help from All-Round? Put your question to All-Round on any of the live forums above, and we'll try to answer your questions! Anything you want to ask, you're most welcome. Please get your parents to agree to this first though.</h3>   	
+				<h3>Do you feel like Jerry? Do you want help from All-Round? Put your question to All-Round on any of the live forums above, and he'll try to answer your questions! Anything you want to ask - you're most welcome. Please get your parents to agree to this first, though.</h3>   	
 			</div>		  
            </div> <!-- end of col -->
            <div class="col-md-2"></div>            
