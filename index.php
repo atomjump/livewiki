@@ -75,6 +75,7 @@
             background-image: url("images/dim.png");
             padding: 20px;
             border-radius: 15px;
+            margin-bottom: 50px;
         }
         
         .background-text {
