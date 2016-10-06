@@ -86,7 +86,8 @@
         .logo {
         	border-radius: 10px;
         	background-image: url("images/logo-raw.png");
-        	background-size: contain;
+        	background-size: 100% 100%;
+    		background-repeat: no-repeat;
         }
         
  
