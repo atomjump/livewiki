@@ -155,7 +155,7 @@
 		  padding-left: 2em;
 		}
 
-		li.football {
+		li::football {
 		  content: '';
 		  position: absolute;
 		  width: 2em;
