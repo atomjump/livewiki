@@ -162,7 +162,7 @@
 		  position: absolute;
 		  width: 2em;
 		  height: 100%;
-		  top: 0;
+		  top: 5px;
 		  left: 0;
 		  background-image: url('images/football-bullet.png');
 		  background-size: 20px 20px;
