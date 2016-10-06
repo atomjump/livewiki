@@ -88,6 +88,7 @@
         	background-image: url("images/logo-raw.png");
         	background-size: 100% 100%;
     		background-repeat: no-repeat;
+    		color: rgba(0, 0, 0, 0.0);
     		
         }
         
