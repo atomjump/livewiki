@@ -141,12 +141,16 @@
     		text-align:left;
 		}
 		
-		li {
-			padding: 10px;
-			padding-top: 0px;
-		}
+
 		ul {
  		   list-style-image: url('images/football-bullet.png');
+		}
+		
+		li {
+			padding-left: 10px;
+			background-image: url('images/football-bullet.png');
+			background-repeat: no-repeat;
+			background-position: 0 .5em;
 		}
 		
 		
