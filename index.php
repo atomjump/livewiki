@@ -143,6 +143,8 @@
 		
 		li {
 			padding: 10px;
+			position: relative;
+			top: -10px;
 		}
 		ul {
  		   list-style-image: url('images/football-bullet.png');
