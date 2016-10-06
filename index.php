@@ -142,15 +142,14 @@
 		}
 		
 
-		ul {
- 		   list-style-image: url('images/football-bullet.png');
-		}
+
 		
 		li {
 			padding-left: 10px;
+			
 			background-image: url('images/football-bullet.png');
 			background-repeat: no-repeat;
-			background-position: 0 .5em;
+			background-position: -0.5em .5em;
 		}
 		
 		
