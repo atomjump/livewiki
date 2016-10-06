@@ -88,6 +88,7 @@
         	background-image: url("images/logo-raw.png");
         	background-size: 100% 100%;
     		background-repeat: no-repeat;
+    		
         }
         
  
@@ -318,7 +319,7 @@
 		function getColor(word, weight, cnt) {
 			var col;
 					if ((cnt === 0)||(word == words.list[0][0])) {		//very first central entry
-						col = '#2E605C';
+						col = 'rgba(0, 0, 0, 0.5);';  //'#2E605C';
 					} else {
 						var char = Math.abs(parseInt((word.charCodeAt(0) - 97)/5)); // = 0-25 /5 = 0-5
 					
