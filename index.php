@@ -361,7 +361,7 @@
             //Desktop version included on the same screen
 	            var cloudOpts = { 
 	              list: words.list,
-	              gridSize: Math.round(20 * $('#my_canvas').width() / 1024),
+	              gridSize: Math.round(50 * $('#my_canvas').width() / 1024),	//16 *
 	              weightFactor: function (size) {
 	                return Math.pow(size, 2.3) * $('#my_canvas').width() / 1024;
 	              },
