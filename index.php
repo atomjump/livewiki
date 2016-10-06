@@ -80,8 +80,7 @@
         }
         
         .background-text {
-        	width: 110%;
-        	border-radius: 15px;
+        	border-radius: 10px;
         	background-image: url("images/dim.png");
         }
         
