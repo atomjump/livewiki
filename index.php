@@ -357,8 +357,14 @@
 		    	var weight = list[cnt][1];
 		    	var col = getColor(word, weight, cnt);
 		    	
+		    	if(cnt == 0) {
+		    		var thisClass = "list logo";
+		    	} else {
+		    		var thisClass = "list background-text";
+		    	}
+		    	
 		    	var fontSize = weight * 10;
-		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='list background-text' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
+		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
 		    	
 		    }   
 		    
