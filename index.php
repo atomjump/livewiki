@@ -83,8 +83,9 @@
         	border-radius: 10px;
         	background-image: url("images/dim.png");
         	background-clip: padding-box;
-			margin-right: 24px;
-			border:12px solid;
+			margin-right: 40px;
+			margin-bottom: 40px
+			border:10px solid;
         }
         
  
