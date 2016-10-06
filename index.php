@@ -371,7 +371,7 @@
 		    	if(cnt == 0) {
 		    		//Special case the logo as an image
 		    		var thisClass = "list logo-mobile";
-		    		all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';><div class='logo-mobile-wrapper'></div></a></br>";
+		    		all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';><img src='images/logo-raw.png' width='80%'></a></br>";
 		    	} else {
 		    		var thisClass = "list background-text";
 		    		all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
