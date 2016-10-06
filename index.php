@@ -92,6 +92,16 @@
     		
         }
         
+         .logo-mobile {
+        	border-radius: 10px;
+        	background-image: url("images/logo-raw.png");
+        	background-size: 100% 100%;
+    		background-repeat: no-repeat;
+    		color: rgba(0, 0, 0, 0.0);
+    		width: 80%;
+    		
+        }
+        
  
    
     </style>
@@ -358,7 +368,8 @@
 		    	var col = getColor(word, weight, cnt);
 		    	
 		    	if(cnt == 0) {
-		    		var thisClass = "list logo";
+		    		var thisClass = "list logo-mobile";
+		    		word = '&nbsp;';
 		    	} else {
 		    		var thisClass = "list background-text";
 		    	}
