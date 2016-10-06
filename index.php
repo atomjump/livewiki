@@ -65,7 +65,7 @@
         }
         
         #my_canvas {
-            background-image: url("images/dim.png");
+            /*background-image: url("images/dim.png");*/
         }
         
         #mobile-display {
@@ -79,8 +79,8 @@
         }
         
         .background-text {
-        	background-color: red;	/* testing */
-        
+        	
+        	background-image: url("images/dim.png");
         }
         
  
