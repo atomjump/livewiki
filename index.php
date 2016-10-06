@@ -155,7 +155,7 @@
 		  padding-left: 2em;
 		}
 
-		.football li::before {
+		li.football {
 		  content: '';
 		  position: absolute;
 		  width: 2em;
