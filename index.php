@@ -144,7 +144,7 @@
 		ul {
 			margin-left: 0;
 			padding-left: 0;
-			list-style: none;
+			list-style-type: none;
 		}
 
 		
@@ -153,7 +153,7 @@
 			
 			background-image: url('images/football-bullet.png');
 			background-repeat: no-repeat;
-			background-position: -1em .5em;
+			background-position: left top;
 		}
 		
 		
