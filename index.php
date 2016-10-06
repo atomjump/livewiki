@@ -150,8 +150,7 @@
 		
 		li.football {
 			
-			background-image: url('images/football-bullet.png');
-			background-repeat: no-repeat;
+			background: url('images/football-bullet.png') no-repeat left 9px;
 			height: 20px;
 			padding-left: 44px;
 			padding-top: 3px;
