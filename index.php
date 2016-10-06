@@ -85,7 +85,7 @@
         
         .logo {
         	border-radius: 10px;
-        	background-image: url("images/logo-raw.png");
+        	background-image: url("images/logo-screen.png");
         	background-size: 100% 100%;
     		background-repeat: no-repeat;
     		color: rgba(0, 0, 0, 0.0);
@@ -368,7 +368,7 @@
 		    	if(cnt == 0) {
 		    		//Special case the logo as an image
 		    		var thisClass = "list logo-mobile";
-		    		all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';><img class='logo-img-mobile' src='images/logo-raw.png' width='80%'></a></br>";
+		    		all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';><img class='logo-img-mobile' src='images/logo-screen.png' width='80%'></a></br>";
 		    	} else {
 		    		var thisClass = "list background-text";
 		    		all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
