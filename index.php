@@ -84,6 +84,8 @@
         	background-image: url("images/dim.png");
         	top: 20px;
         	display:inline-block;
+        	margin-left:10px;
+        	margin-right:10px;
         }
         
  
