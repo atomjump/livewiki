@@ -148,12 +148,25 @@
 		}
 
 		
-		li.football {
-			
-			background: url('images/football-bullet.png') no-repeat left 20px;
-			height: 40px;
-			padding-left: 44px;
-			padding-top: 3px;
+		
+		li {
+		  font-size:26px;
+		  position: relative;
+		  margin-bottom: .5em;
+		  padding-left: 2em;
+		}
+
+		li::before.football {
+		  content: '';
+		  position: absolute;
+		  width: 2em;
+		  height: 100%;
+		  top: 0;
+		  left: 0;
+		  background-image: url('images/football-bullet.png');
+		  background-size: 1em 1em;
+		  background-repeat: no-repeat;
+		  background-position: center;
 		}
 		
 		
