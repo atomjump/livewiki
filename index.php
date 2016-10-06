@@ -149,9 +149,10 @@
 		
 		
 		li {
+		  font-size: 120%;
 		  position: relative;
 		  margin-bottom: .5em;
-		  padding-left: 2em;
+		  padding-left: 3em;
 		  
 		}
 
