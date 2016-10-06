@@ -82,10 +82,7 @@
         .background-text {
         	border-radius: 10px;
         	background-image: url("images/dim.png");
-        	background-clip: padding-box;
-			margin: 20px;
-			
-			border:10px solid;
+
         }
         
  
