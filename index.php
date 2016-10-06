@@ -364,6 +364,7 @@
 		    	var word = list[cnt][0];
 		    	var weight = list[cnt][1];
 		    	var col = getColor(word, weight, cnt);
+		    	var fontSize = weight * 10;
 		    	
 		    	if(cnt == 0) {
 		    		//Special case the logo as an image
@@ -374,7 +375,7 @@
 		    		all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
 		    	}
 		    	
-		    	var fontSize = weight * 10;
+		    	
 		    	
 		    	
 		    }   
