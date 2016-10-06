@@ -79,7 +79,7 @@
         }
         
         .background-text {
-        	
+        	padding: 6px;
         	background-image: url("images/dim.png");
         }
         
