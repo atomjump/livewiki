@@ -367,7 +367,7 @@
 	              color: getColor,
 	              rotateRatio: 0,
 	              backgroundColor: '<?php echo $background_color ?>',
-	              classes: 'comment-open',
+	              classes: 'comment-open background-text',
 	              click: clickEntry,
 	              hover: function(word) {
 	              },
