@@ -149,7 +149,6 @@
 
 		
 		li.football {
-			padding-left: 10px;
 			
 			background-image: url('images/football-bullet.png');
 			background-repeat: no-repeat;
