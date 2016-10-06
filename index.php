@@ -93,7 +93,7 @@
         }
         
          .logo-mobile {
-        	
+        	border-radius: 10px;
     		
         }
         
