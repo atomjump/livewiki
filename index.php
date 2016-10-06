@@ -82,6 +82,8 @@
         .background-text {
         	border-radius: 10px;
         	background-image: url("images/dim.png");
+        	top: 20px;
+        	display:inline-block;
         }
         
  
