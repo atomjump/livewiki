@@ -153,7 +153,6 @@
 			
 			background-image: url('images/football-bullet.png');
 			background-repeat: no-repeat;
-			background-position: left top;
 			height: 20px;
 			padding-left: 44px;
 			padding-top: 3px;
