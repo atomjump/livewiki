@@ -150,7 +150,6 @@
 		
 		
 		li {
-		  font-size:26px;
 		  position: relative;
 		  margin-bottom: .5em;
 		  padding-left: 2em;
@@ -164,7 +163,7 @@
 		  top: 0;
 		  left: 0;
 		  background-image: url('images/football-bullet.png');
-		  background-size: 1em 1em;
+		  background-size: 20px 20px;
 		  background-repeat: no-repeat;
 		  background-position: center;
 		}
