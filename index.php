@@ -93,16 +93,17 @@
         }
         
          .logo-mobile {
+        	
+    		
+        }
+        
+        .logo-mobile-wrapper {
         	border-radius: 10px;
         	background-image: url("images/logo-raw.png");
         	background-size: 100% 100%;
     		background-repeat: no-repeat;
-    		color: rgba(0, 0, 0, 0.0);
     		width: 80%;
-    		
-        }
-        
- 
+ 		}
    
     </style>
 
@@ -368,14 +369,16 @@
 		    	var col = getColor(word, weight, cnt);
 		    	
 		    	if(cnt == 0) {
+		    		//Special case the logo as an image
 		    		var thisClass = "list logo-mobile";
-		    		word = '&nbsp;';
+		    		all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';><div class='logo-mobile-wrapper'></div></a></br>";
 		    	} else {
 		    		var thisClass = "list background-text";
+		    		all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
 		    	}
 		    	
 		    	var fontSize = weight * 10;
-		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='" + thisClass + "' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
+		    	
 		    	
 		    }   
 		    
