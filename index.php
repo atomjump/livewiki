@@ -65,11 +65,9 @@
         }
         
         #my_canvas {
-            /*background-image: url("images/dim.png");*/
         }
         
         #mobile-display {
-        	/*background-image: url("images/dim.png");*/
         }
 
 
@@ -83,6 +81,12 @@
         	border-radius: 10px;
         	background-image: url("images/dim.png");
 
+        }
+        
+        .logo {
+        	border-radius: 10px;
+        	background-image: url("images/logo-raw.png");
+        
         }
         
  
@@ -361,7 +365,7 @@
             //Desktop version included on the same screen
 	            var cloudOpts = { 
 	              list: words.list,
-	              gridSize: Math.round(40 * $('#my_canvas').width() / 1024),	//16 *
+	              gridSize: Math.round(40 * $('#my_canvas').width() / 1024),	
 	              weightFactor: function (size) {
 	                return Math.pow(size, 2.3) * $('#my_canvas').width() / 1024;
 	              },
@@ -369,7 +373,12 @@
 	              color: getColor,
 	              rotateRatio: 0,
 	              backgroundColor: '<?php echo $background_color ?>',
-	              classes: 'comment-open background-text',
+	              classes: function(word, weight, fontSize, distance, theta) {
+	                  if((word == words.list[0][0])) {		//very first central entry
+	              	  	return 'comment-open logo';
+	              	  }
+	              	  return 'comment-open background-text';		//Default
+	              }
 	              click: clickEntry,
 	              hover: function(word) {
 	              },
