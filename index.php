@@ -153,7 +153,7 @@
 		  position: relative;
 		  margin-bottom: .5em;
 		  padding-left: 2em;
-		  padding-right: 2em;
+		  margin-left: 2em;
 		}
 
 		li::before {
