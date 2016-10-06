@@ -80,8 +80,8 @@
         }
         
         .background-text {
-        	margin: 40px 20px 40px 20px;
-        	padding: 10px 20px 10px 20px;
+        	margin: -20px -20px -20px -20px;
+        	padding: -10px -20px -10px -20px;
         	border-radius: 15px;
         	background-image: url("images/dim.png");
         }
