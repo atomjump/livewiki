@@ -142,7 +142,8 @@
 		}
 		
 		ul.no-bullet {
-			
+			margin-left: 0px;
+			padding-left: 0px;
 			list-style-type: none;
 		}
 
