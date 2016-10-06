@@ -165,7 +165,7 @@
 		  background-image: url('images/football-bullet.png');
 		  background-size: 20px 20px;
 		  background-repeat: no-repeat;
-		  background-position: center;
+		  background-position: top;
 		}
 		
 		
