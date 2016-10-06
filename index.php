@@ -142,8 +142,7 @@
 		}
 		
 		ul.no-bullet {
-			margin-left: 0;
-			padding-left: 0;
+			
 			list-style-type: none;
 		}
 
@@ -153,7 +152,7 @@
 		  position: relative;
 		  margin-bottom: .5em;
 		  padding-left: 2em;
-		  margin-left: 2em;
+		  
 		}
 
 		li::before {
