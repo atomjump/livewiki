@@ -378,7 +378,7 @@
 	              	  	return 'comment-open logo';
 	              	  }
 	              	  return 'comment-open background-text';		//Default
-	              }
+	              },
 	              click: clickEntry,
 	              hover: function(word) {
 	              },
