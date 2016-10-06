@@ -69,7 +69,7 @@
         }
         
         #mobile-display {
-        	background-image: url("images/dim.png");
+        	/*background-image: url("images/dim.png");*/
         }
 
 
@@ -350,7 +350,7 @@
 		    	var col = getColor(word, weight, cnt);
 		    	
 		    	var fontSize = weight * 10;
-		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='list' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
+		    	all = all + "<a href='javascript:' onclick='return clickEntry(words.list[" + cnt + "], null);' class='list background-text' style='color: " + col + "; font-size:" + fontSize + "px';>" + word + "</a></br>";
 		    	
 		    }   
 		    
