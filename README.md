@@ -26,14 +26,16 @@ This plugin should be put on the client website (not in the AtomJump Loop server
 After installing the loop-server, from your intended livewiki home directory:
 
 1. `git clone https://github.com/atomjump/livewiki.git .`
+
+2. `cd livewiki`
         
 2. `npm install wordcloud`
 
-3. `bower install atomjump`
+3. [Optional] `bower install atomjump`
 
 4. `cp configORIGINAL.php config.php`
 
-Now edit the options in config.php. 
+Now edit the options in config.php. If you included your own bower install, include the local relative paths.
 
 5. `chmod 777 data/words.json`
 
