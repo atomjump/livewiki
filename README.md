@@ -29,15 +29,15 @@ After installing the loop-server, from your intended livewiki home directory:
 
 2. `cd livewiki`
         
-2. `npm install wordcloud`
+3. `npm install wordcloud`
 
-3. [Optional] `bower install atomjump`
+4. [Optional] `bower install atomjump`
 
-4. `cp configORIGINAL.php config.php`
+5. `cp configORIGINAL.php config.php`
 
 Now edit the options in config.php. If you included your own bower install, include the local relative paths.
 
-5. `chmod 777 data/words.json`
+6. `chmod 777 data/words.json`
 
 
 ## Using the Live Wiki
