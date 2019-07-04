@@ -16,7 +16,7 @@ Or
 For your livewiki:
 * PHP >= 5.3
 * npm
-* bower
+* bower ([optional] for local js/css files)
 
 
 ## Installation notes:
