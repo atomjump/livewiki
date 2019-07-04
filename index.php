@@ -29,8 +29,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="mobile-web-app-capable" content="yes">
-    <script src="node_modules/wordcloud/src/wordcloud2.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="<?php echo $wordcloud_js_path ?>"></script>
+    <script src="<?php echo $jquery_js_path ?>"></script>
    
 	<!-- Must be before the other css files for global reach -->
     <style>
@@ -66,10 +66,10 @@
 
     <!-- AtomJump Feedback Starts -->
    <!-- Bootstrap core CSS. Ver 3.3.1 sits in css/bootstrap.min.css -->
-	  <link rel="StyleSheet" href="<?php echo $bootstrap_css_path ?>/bootstrap.min.css" rel="stylesheet">
+	  <link rel="StyleSheet" href="<?php echo $bootstrap_css_path ?>" rel="stylesheet">
 	
 	<!-- AtomJump Feedback CSS -->
-	<link rel="StyleSheet" href="<?php echo $atomjump_path ?>/css/comments.css">
+	<link rel="StyleSheet" href="<?php echo $atomjump_css_path ?>">
 
 
 
@@ -109,7 +109,7 @@
 		//Add your configuration here for AtomJump Feedback
 		var ajFeedback = {
 			"uniqueFeedbackId" : "<?php echo $unique_key ?>home",		//This can be anything globally unique to your company/page	
-			"myMachineUser" : "1.1.1.1:2",			/* Obtain this value from 1. Settings
+			"myMachineUser" : "<?php echo $my_machine_user ?>",			/* Obtain this value from 1. Settings
 																			2. Entering an email/Password
 																			3. Click save
 																			4. Settings
@@ -120,7 +120,7 @@
 			"server":  "<?php echo $server ?>"
 		}
 	</script>
-	<script type="text/javascript" src="<?php echo $atomjump_path ?>/js/chat.js"></script>
+	<script type="text/javascript" src="<?php echo $atomjump_js_path ?>"></script>
 	<!-- AtomJump Feedback Ends -->
    
 </head>
