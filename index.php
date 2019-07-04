@@ -180,6 +180,7 @@
                               <option value="5" selected="selected">Mild</option>
                               <option value="6">Hot stuff</option>
                               <option value="8">Surface of the sun</option>
+                              <option value="10">Set title</option>
                             </select>
                         </div>
                     </div> <!-- end of input group -->

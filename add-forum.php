@@ -19,29 +19,35 @@
         
         //Handle case of overwrite if already exists
         $exists = false;
-        for($cnt = 0; $cnt< count($json['list']); $cnt++) {
-            if($json['list'][$cnt][0] == $new_forum) {
-                //Modify the temperature
-                if($temperature == 0) {
-                    unset($json['list'][$cnt]);     //remove entry in this case
-                    $the_list = $json['list']; 	    //reindex the array
-                    $the_list = array_values($the_list);
-                    $json['list'] = $the_list;
-                } else {
-                
-                    $json['list'][$cnt][1] = $temperature;  //set new temp
-                }
-                $exists = true;
-            }
+        if($temperature == 10) {
+        	//Setting the first entry i.e the title
+        	$json['list'][0] = $new_list;
+        } else {
         
-        } 
-        
-       
-        
-        if($exists == false) {
-            //Add a new entry
-            array_push($json['list'], $new_list);
-        }
+			for($cnt = 0; $cnt< count($json['list']); $cnt++) {
+				if($json['list'][$cnt][0] == $new_forum) {
+					//Modify the temperature
+					if($temperature == 0) {
+						unset($json['list'][$cnt]);     //remove entry in this case
+						$the_list = $json['list']; 	    //reindex the array
+						$the_list = array_values($the_list);
+						$json['list'] = $the_list;
+					} else {
+					
+						$json['list'][$cnt][1] = $temperature;  //set new temp
+					}
+					$exists = true;
+				}
+		
+			} 
+		
+	   
+		
+			if($exists == false) {
+				//Add a new entry
+				array_push($json['list'], $new_list);
+			}
+		}
         
         //Write out array to json file
         file_put_contents($data_file, json_encode($json));
