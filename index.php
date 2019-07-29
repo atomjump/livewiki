@@ -252,7 +252,8 @@
 		
 		function clickEntry(index, size) {
 		  	//Modify the local clickable feedback link, then click it
-	        $('#my-comments').data('uniquefeedbackid', "<?php echo $unique_key ?>" + index[0]);
+		  	var forumTitle = index[0].replace(" ", "-");		//Replace spaces with hyphens
+	        $('#my-comments').data('uniquefeedbackid', "<?php echo $unique_key ?>" + forumTitle);
 	        $('#my-comments').trigger("click");
 	        return false;
 		
