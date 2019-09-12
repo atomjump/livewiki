@@ -19,5 +19,10 @@
 	$my_machine_user = "1.1.1.1:2";                   								//Main owner of site. No longer so relevant.                                       
 	$wordcloud_js_path = "node_modules/wordcloud/src/wordcloud2.js";			//Relative or absolute path to the wordcloud js file
 	$jquery_js_path = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js";	//Relative or absolute path to the jquery js file. Ver 1.12.0 is know to be compatible.
+
+	$html5shiv_path = "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js";		//Relative or absolute path to IE handling HTML5
+	$respond_path = "https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js";		//Relative or absolute path to IE handling HTML5
+
+
 ?>
 
