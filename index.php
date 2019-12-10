@@ -117,7 +117,9 @@
 																			6. Copy the myMachineUser into here.
 					
 													*/
-			"server":  "<?php echo $server ?>"
+			"server":  "<?php echo $server ?>",
+			"cssFeedback" : "<?php echo $atomjump_css_path ?>",
+			"cssBootstrap": "<?php echo $bootstrap_css_path ?>"
 		}
 	</script>
 	<script type="text/javascript" src="<?php echo $atomjump_js_path ?>"></script>
