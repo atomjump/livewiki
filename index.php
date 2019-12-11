@@ -47,6 +47,7 @@
           display:table;
           width: 100%;
           padding: 0;
+          background-color: <?php echo $background_color ?>;
         }
          
         .row-fluid {
