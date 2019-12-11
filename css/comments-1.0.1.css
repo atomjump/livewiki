@@ -477,6 +477,7 @@ img {
 		/*Removed: */
 		box-shadow: 0px 0px 0px rgba(0,0,0,.5);
 		border-radius: 0px;
+		margin-bottom: 40px;	/* Intended to cope with a hidden address bar */
 	}
 	
 	.comment-padding {
