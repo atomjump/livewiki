@@ -48,4 +48,4 @@ team members.
 
 ## Demo
 
-A demo is available at https://atomjump.com/demo/livewiki/
+A demo is available at http://atomjump.org/demo/livewiki/
