@@ -37,7 +37,6 @@
     
         html, body {
             height:100%;
-            width: 100%;
             margin:0;
             padding:0
         }
@@ -130,7 +129,7 @@
 <body>
     <div id="comment-holder"></div><!-- holds the popup comments. Can be anywhere between the <body> tags -->
     <div class="container-fluid" >
-        <div id="show-word-cloud" class="row" style="padding-top: 10px;">
+        <div id="show-word-cloud" class="row" style="padding-top: 10px; width: 100%;">
             
             <div class="col-md-12">
                 <div class="centering text-center">
