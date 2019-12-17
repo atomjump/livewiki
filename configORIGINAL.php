@@ -5,7 +5,7 @@
 
 	$unique_key = "yoursite_";                                      //This must be set to your site or business name,
 																	//and it should be globally unique to the $server
-	$same_domain = "http://" . $_SERVER['HTTP_HOST'];				//For cross-origin checks
+	$same_domain = $_SERVER['HTTP_HOST'];				//For cross-origin checks
 
 	$background_color = "#5ca7d2";                                  //Background colour
 	$font_family = "Times, serif";
