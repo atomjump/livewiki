@@ -81,6 +81,7 @@
 	<!--[if lt IE 9]>
 	  <script src="<?php echo $html5shiv_path ?>"></script>
 	  <script src="<?php echo $respond_path ?>"></script>
+	  <script src="<?php echo $ie9_version ?>"></script>
 	<![endif]-->
 	
 	

@@ -11,15 +11,15 @@
 	$font_family = "Times, serif";
   
 	$bootstrap_css_path = "css/bootstrap.min.css";  	//Put relative/absolute URL to your bootstrap css file
-	$atomjump_js_path = "js/chat-1.0.7.js"; 					//Put relative/absolute URL to your AtomJump Loop Javascript chat.js file
-	$atomjump_css_path = "css/comments-1.0.3.css?ver=1.0.3";              //Put relative/absolute URL to your AtomJump Loop Javascript comments.css file
+	$atomjump_js_path = "js/chat-1.0.8.js"; 					//Put relative/absolute URL to your AtomJump Loop Javascript chat.js file
+	$atomjump_css_path = "css/comments-1.0.4.css?ver=1.0.3";              //Put relative/absolute URL to your AtomJump Loop Javascript comments.css file
 	$my_machine_user = "1.1.1.1:2";                   								//Main owner of site. No longer so relevant.                                       
 	$wordcloud_js_path = "js/wordcloud2.js";			//Relative or absolute path to the wordcloud js file
 	$jquery_js_path = "js/jquery.min.js";	//Relative or absolute path to the jquery js file. Ver 1.12.0 is know to be compatible.
 
 	$html5shiv_path = "js/html5shiv.js";		//Relative or absolute path to IE handling HTML5
 	$respond_path = "js/respond.min.js";		//Relative or absolute path to IE handling HTML5
-
+	$ie9_version = "js/chat-1.0.7.js";			//Relative or absolute path to IE small pngs rather than svgs
 
 ?>
 
