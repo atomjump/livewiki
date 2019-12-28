@@ -145,7 +145,7 @@
 			} else {
 		
 				//Share not supported - likely a desktop or iPhone - try SMS. Open up a box with some text to copy
-				var myMessage = "Copy and Paste:  <b>Join me to discuss this injury " + myURL + "</b>";
+				var myMessage = "Copy and Paste:  <b>Join me to chat at " + myURL + "</b>";
 				jQuery("#message").html(myMessage);
 				jQuery("#message").slideToggle();
 		
@@ -187,6 +187,11 @@
         			<div class="share-button share-height" title="Share with a colleague">
 						<a class="share-height" onclick="return shareMe(currentURL);" href="javascript:" id="start-share"><i style="color: #888;" class='fa fa-share-alt fa-3x'></i> Share</a>
 					</div>
+			</div>
+			
+			<div class="col-xs-12 col-md-12">
+									<div style="display: none; overflow-wrap: break-word; word-break: break-word; word-wrap: break-word;
+ white-space: normal;" class="alert alert-info alert-dismissable nowrap" id="message"></div>
 			</div>
             
         </div> <!-- end of row -->
