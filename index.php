@@ -125,6 +125,36 @@
 			"cssBootstrap": "<?php echo $bootstrap_css_path ?>",
 			"domain": "<?php echo $same_domain ?>"
 		}
+		
+		
+		
+		function shareMe(alteredURL) {
+		   var myURL = alteredURL;	
+		   if (navigator.share) {
+			  navigator.share({
+				  title: 'Wound Mapp',
+				  text: 'Join me to discuss this injury:',
+				  url: myURL,
+			  }).then(function() {
+						console.log('Successful share'); 
+						return false;
+					}).catch(function(error) {
+						console.log('Error sharing', error);
+						return false;
+					});
+			} else {
+		
+				//Share not supported - likely a desktop or iPhone - try SMS. Open up a box with some text to copy
+				var myMessage = "Copy and Paste:  <b>Join me to discuss this injury " + myURL + "</b>";
+				jQuery("#message").html(myMessage);
+				jQuery("#message").slideToggle();
+		
+				return true; 
+			}
+		 }
+		 
+		var originalURL = window.location.href;
+		
 	</script>
 	<script type="text/javascript" src="<?php echo $atomjump_js_path ?>"></script>
 	<!-- AtomJump Feedback Ends -->
@@ -152,6 +182,12 @@
                     
                  </div>
             </div>
+            
+            <div  style="float: right;">
+        			<div class="share-button share-height" title="Share with a colleague">
+						<a class="share-height" onclick="return shareMe(currentURL);" href="javascript:" id="start-share"><i style="color: #888;" class='fa fa-share-alt fa-3x'></i> Share</a>
+					</div>
+			</div>
             
         </div> <!-- end of row -->
  
