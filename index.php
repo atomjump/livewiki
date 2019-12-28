@@ -163,6 +163,22 @@
 <body>
     <div id="comment-holder"></div><!-- holds the popup comments. Can be anywhere between the <body> tags -->
     <div class="container-fluid" >
+        
+        
+        <div class="row">
+         	<div  style="float: right;">
+        			<div class="share-button share-height" title="Share with a colleague">
+						<a class="share-height" onclick="return shareMe(currentURL);" href="javascript:" id="start-share"><i style="color: #888;" class='fa fa-share-alt fa-3x'></i> Share</a>
+					</div>
+			</div>
+			
+			<div class="col-xs-12 col-md-12">
+									<div style="display: none; overflow-wrap: break-word; word-break: break-word; word-wrap: break-word;
+ white-space: normal;" class="alert alert-info alert-dismissable nowrap" id="message"></div>
+			</div>
+        
+        </div>
+        
         <div id="show-word-cloud" class="row" style="padding-top: 10px; width: 100%; background-color: <?php echo $background_color ?>">
             
             <div class="col-md-12">
@@ -175,24 +191,11 @@
 					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto">
 						<div id="my_canvas" style="width:100%; height: 768px; "></div>
 					</div>
-                   
-                    
-                    
-                   
                     
                  </div>
             </div>
             
-            <div  style="float: right;">
-        			<div class="share-button share-height" title="Share with a colleague">
-						<a class="share-height" onclick="return shareMe(currentURL);" href="javascript:" id="start-share"><i style="color: #888;" class='fa fa-share-alt fa-3x'></i> Share</a>
-					</div>
-			</div>
-			
-			<div class="col-xs-12 col-md-12">
-									<div style="display: none; overflow-wrap: break-word; word-break: break-word; word-wrap: break-word;
- white-space: normal;" class="alert alert-info alert-dismissable nowrap" id="message"></div>
-			</div>
+           
             
         </div> <!-- end of row -->
  
