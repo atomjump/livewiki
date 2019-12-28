@@ -168,12 +168,12 @@
         <div class="row">
         	<div class="col-xs-12 col-md-12">
 					<div style="display: none; overflow-wrap: break-word; word-break: break-word; word-wrap: break-word;
- white-space: normal;" class="alert alert-info alert-dismissable nowrap" id="message"></div>
+ white-space: normal; margin-top: 10px;" class="alert alert-info alert-dismissable nowrap" id="message"></div>
 			</div>
         
          	<div  style="float: right;">
         			<div class="share-button share-height" title="Share with a colleague">
-						<a class="share-height" onclick="return shareMe(originalURL);" href="javascript:" id="start-share"><i style="color: #888;" class='fa fa-share-alt fa-3x'></i> Share</a>
+						<a class="share-height" onclick="return shareMe(originalURL);" href="javascript:" id="start-share"><i style="color: #888; margin: 10px;" class='fa fa-share-alt fa-3x'></i> Share</a>
 					</div>
 			</div>
 			
