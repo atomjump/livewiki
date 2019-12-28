@@ -177,8 +177,8 @@
 			</div>
         
          	<div  style="float: right;">
-        			<div class="share-button share-height" title="Share with a colleague">
-						<a class="share-height" onclick="return shareMe(originalURL);" href="javascript:" id="start-share"><img width="48" src="images/share.svg">Share</a>
+        			<div class="share-button" title="Share with a colleague">
+						<a onclick="return shareMe(originalURL);" href="javascript:" id="start-share"><img width="48" src="images/share.svg"></a>
 					</div>
 			</div>
 			
