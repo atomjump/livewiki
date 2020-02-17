@@ -103,6 +103,11 @@
     		text-align:left;
 		}
 		
+		.share-button {
+			margin: 10px;
+		
+		}
+		
 		
 	 </style>
 
@@ -125,6 +130,36 @@
 			"cssBootstrap": "<?php echo $bootstrap_css_path ?>",
 			"domain": "<?php echo $same_domain ?>"
 		}
+		
+		
+		
+		function shareMe(alteredURL) {
+		   var myURL = alteredURL;	
+		   if (navigator.share) {
+			  navigator.share({
+				  title: 'Wound Mapp',
+				  text: 'Join me to discuss this injury:',
+				  url: myURL,
+			  }).then(function() {
+						console.log('Successful share'); 
+						return false;
+					}).catch(function(error) {
+						console.log('Error sharing', error);
+						return false;
+					});
+			} else {
+		
+				//Share not supported - likely a desktop or iPhone - try SMS. Open up a box with some text to copy
+				var myMessage = "Copy and Paste:  <b>Join me to chat at " + myURL + "</b>";
+				jQuery("#message").html(myMessage);
+				jQuery("#message").slideToggle();
+		
+				return true; 
+			}
+		 }
+		 
+		var originalURL = window.location.href;
+		
 	</script>
 	<script type="text/javascript" src="<?php echo $atomjump_js_path ?>"></script>
 	<!-- AtomJump Feedback Ends -->
@@ -133,6 +168,24 @@
 <body>
     <div id="comment-holder"></div><!-- holds the popup comments. Can be anywhere between the <body> tags -->
     <div class="container-fluid" >
+        
+        
+        <div class="row">
+        	<div class="col-xs-12 col-md-12">
+					<div style="display: none; overflow-wrap: break-word; word-break: break-word; word-wrap: break-word;
+ white-space: normal; margin-top: 10px;" class="alert alert-info alert-dismissable nowrap" id="message"></div>
+			</div>
+        
+         	<div  style="float: right;">
+        			<div class="share-button" title="Share with a colleague">
+						<a onclick="return shareMe(originalURL);" href="javascript:" id="start-share"><img width="32" src="images/share.svg"></a>
+					</div>
+			</div>
+			
+			
+        
+        </div>
+        
         <div id="show-word-cloud" class="row" style="padding-top: 10px; width: 100%; background-color: <?php echo $background_color ?>">
             
             <div class="col-md-12">
@@ -145,13 +198,11 @@
 					<div style="position: relative; width:100%; height: 768px; margin-left: auto; margin-right:auto">
 						<div id="my_canvas" style="width:100%; height: 768px; "></div>
 					</div>
-                   
-                    
-                    
-                   
                     
                  </div>
             </div>
+            
+           
             
         </div> <!-- end of row -->
  
@@ -186,7 +237,7 @@
                               <option value="5" selected="selected">Mild</option>
                               <option value="6">Hot stuff</option>
                               <option value="8">Surface of the sun</option>
-                              <option value="10">Set title</option>
+                              <option value="10">Set title (max 9 chars)</option>
                             </select>
                         </div>
                     </div> <!-- end of input group -->
