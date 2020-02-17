@@ -1,0 +1,23 @@
+
+
+#Note: Over-riding httpd.conf settings using .htaccess is only allowed 
+#if the AllowOverride Directive is set inside httpd.conf which is the default case.
+
+# Disable directory browsing 
+Options -Indexes
+
+# Hide the contents of directories
+IndexIgnore *
+
+# Deny access to filenames starting with dot(.)
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+# Deny access to files with extensions .txt, .log, .sh, .sql, .md. But allow .json
+<FilesMatch "\.(txt|log|sh|sql|md)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
