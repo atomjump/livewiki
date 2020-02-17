@@ -20,3 +20,8 @@ Deny from all
 Order allow,deny
 Deny from all
 </FilesMatch>
+
+<FilesMatch "^\.json">
+Order allow,deny
+Allow from all
+</FilesMatch>
