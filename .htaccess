@@ -15,8 +15,8 @@ Order allow,deny
 Deny from all
 </FilesMatch>
 
-# Deny access to files with extensions .json, .txt, .log, .sh, .sql, .md
-<FilesMatch "\.(json|txt|log|sh|sql|md)$">
+# Deny access to files with extensions .txt, .log, .sh, .sql, .md. But allow .json
+<FilesMatch "\.(txt|log|sh|sql|md)$">
 Order allow,deny
 Deny from all
 </FilesMatch>
