@@ -15,13 +15,14 @@ Order allow,deny
 Deny from all
 </FilesMatch>
 
+<Files "words.json">
+	Order allow,deny
+	Allow from all
+</Files>
+
 # Deny access to files with extensions .txt, .log, .sh, .sql, .md. But allow .json
 <FilesMatch "\.(txt|log|sh|sql|md)$">
 Order allow,deny
 Deny from all
 </FilesMatch>
 
-<FilesMatch "^\.(json)$">
-Order allow,deny
-Allow from all
-</FilesMatch>
