@@ -1,17 +1,17 @@
 <img src="https://atomjump.com/images/logo80.png">
 
 # livewiki
-AtomJump Loop Server Plugin to create a live wiki using a wordcloud.
+AtomJump Messaging Server Plugin to create a live wiki using a wordcloud.
 
 
 ## Requirements
 
-For your Loop Server:
-* AtomJump Loop Server >= 0.5.0
+For your Messaging Server:
+* AtomJump Messaging Server >= 0.5.0
 
 Or
 
-* AtomJump Loop >= 0.5.1 and AtomJump.com API (Use: https://atomjump.com/api/)
+* AtomJump Messaging >= 0.5.1 and AtomJump.com API (Use: https://clst[n].atomjump.com/api/ as the Messaging Server where [n] = 0,1 or 2)
 
 For your livewiki:
 * PHP >= 5.3
@@ -21,9 +21,9 @@ For your livewiki:
 
 ## Installation notes:
 
-This plugin should be put on the client website (not in the AtomJump Loop server plugins directory), and it is best as a front-end to a full install of AtomJump Loop Server https://src.atomjump.com/atomjump/loop-server. 
+This plugin should be put on the client website (not in the AtomJump Loop server plugins directory), and it is best as a front-end to a full install of AtomJump Messaging Server https://src.atomjump.com/atomjump/loop-server. 
 
-After installing the loop-server, from your intended livewiki home directory:
+After installing the messaging server, from your intended livewiki home directory:
 
 1. `git clone https://src.atomjump.com/atomjump/livewiki.git .`
 
