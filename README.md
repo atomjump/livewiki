@@ -1,5 +1,7 @@
 <img src="https://atomjump.com/images/logo80.png">
 
+__WARNING: this project has now moved to https://src.atomjump.com/atomjump/livewiki.git__
+
 # livewiki
 AtomJump Messaging Server Plugin to create a live wiki using a wordcloud.
 
